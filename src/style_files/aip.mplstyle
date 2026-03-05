@@ -1,0 +1,104 @@
+# AIP Publishing figure style
+# Ref: https://publishing.aip.org/resources/researchers/author-instructions/
+# Dimensions: one-column max 3.37 in (8.5 cm), two-column max 6.69 in (17 cm), max depth 8.25 in (21.1 cm)
+# Text: minimum 8 pt for legends/labels; lines min 0.5 pt; embed fonts; vector or 600 dpi line art
+
+# Font family and style
+font.family: Arial
+font.style: normal
+font.variant: normal
+font.weight: normal
+font.stretch: normal
+
+# Font sizes (AIP: minimum 8 pt for labels/legends within figures)
+font.size: 9
+axes.labelsize: 9
+axes.titlesize: 9
+xtick.labelsize: 8
+ytick.labelsize: 8
+legend.fontsize: 8
+
+# Layout — single column default (3.37 in max width)
+figure.figsize: 3.37, 4
+figure.facecolor: white
+figure.dpi: 300
+
+# Control subplot spacing
+figure.autolayout: False
+figure.constrained_layout.use: False
+figure.constrained_layout.h_pad: 0.05
+figure.constrained_layout.w_pad: 0.02
+figure.constrained_layout.hspace: 0.06
+figure.constrained_layout.wspace: 0.06
+figure.subplot.left: 0.15
+figure.subplot.right: 0.95
+figure.subplot.bottom: 0.15
+figure.subplot.top: 0.94
+figure.subplot.hspace: 0.25
+figure.subplot.wspace: 0.25
+
+# Save figure (AIP: line art 600 dpi; PDF line art 1200 PPI)
+savefig.facecolor: white
+savefig.dpi: 600
+savefig.bbox: tight
+savefig.pad_inches: 0.02
+savefig.transparent: False
+
+# Axes
+axes.edgecolor: black
+axes.labelcolor: black
+axes.linewidth: 1.0
+axes.labelpad: 2.0
+axes.xmargin: 0.05
+axes.ymargin: 0.05
+legend.frameon: False
+
+# Ticks
+xtick.color: black
+xtick.direction: in
+xtick.alignment: center
+xaxis.labellocation: center
+xtick.labeltop: False
+xtick.major.bottom: True
+xtick.major.pad: 2.0
+xtick.major.size: 3
+xtick.major.top: True
+xtick.major.width: 0.8
+xtick.minor.bottom: False
+xtick.minor.pad: 2.0
+xtick.minor.size: 1.5
+xtick.minor.top: False
+xtick.minor.visible: False
+xtick.minor.width: 0.25
+xtick.top: True
+ytick.alignment: center
+yaxis.labellocation: center
+ytick.color: black
+ytick.direction: in
+ytick.labelleft: True
+ytick.labelright: False
+ytick.left: True
+ytick.major.left: True
+ytick.major.pad: 2.0
+ytick.major.right: True
+ytick.major.size: 3
+ytick.major.width: 0.8
+ytick.minor.left: False
+ytick.minor.pad: 2.0
+ytick.minor.right: False
+ytick.minor.size: 1.5
+ytick.minor.visible: False
+ytick.minor.width: 0.25
+ytick.right: True
+
+# Lines and Markers (AIP: minimum 0.5 pt line width)
+lines.linewidth: 1.5
+lines.markersize: 6
+lines.markeredgewidth: 0.8
+lines.markerfacecolor: white
+
+# Color cycle
+axes.prop_cycle: cycler('color', ['DB444B', '006BA2', '3EBCD2', '379A8B', 'EBB434', 'B4BA39', '9A607F', 'D1B07C'])
+
+# LaTeX
+text.latex.preamble: \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath}

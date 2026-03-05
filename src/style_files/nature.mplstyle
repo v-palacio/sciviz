@@ -1,0 +1,105 @@
+# Nature journal figure style
+# Ref: https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/
+# Dimensions: single column 89 mm (3.5 in), double 183 mm (7.2 in), max height 247 mm (9.7 in)
+# Text: min 5 pt, max 7 pt; panel labels (a,b,c) 8 pt bold; Arial/Helvetica preferred
+# Export: vector PDF/EPS preferred; raster min 300 dpi, line art 1000+ dpi or vector
+
+# Font family and style
+font.family: Arial
+font.style: normal
+font.variant: normal
+font.weight: normal
+font.stretch: normal
+
+# Font sizes (Nature: body 5–7 pt max, panel labels 8 pt bold)
+font.size: 7
+axes.labelsize: 7
+axes.titlesize: 7
+xtick.labelsize: 6
+ytick.labelsize: 6
+legend.fontsize: 6
+
+# Layout — single column default (89 mm ≈ 3.5 in)
+figure.figsize: 3.5, 4
+figure.facecolor: white
+figure.dpi: 300
+
+# Control subplot spacing
+figure.autolayout: False
+figure.constrained_layout.use: False
+figure.constrained_layout.h_pad: 0.05
+figure.constrained_layout.w_pad: 0.02
+figure.constrained_layout.hspace: 0.06
+figure.constrained_layout.wspace: 0.06
+figure.subplot.left: 0.15
+figure.subplot.right: 0.95
+figure.subplot.bottom: 0.15
+figure.subplot.top: 0.94
+figure.subplot.hspace: 0.25
+figure.subplot.wspace: 0.25
+
+# Save figure — for PDF use: plt.rcParams['pdf.fonttype'] = 42 (editable text per Nature)
+savefig.facecolor: white
+savefig.dpi: 600
+savefig.bbox: tight
+savefig.pad_inches: 0.02
+savefig.transparent: False
+
+# Axes
+axes.edgecolor: black
+axes.labelcolor: black
+axes.linewidth: 1.0
+axes.labelpad: 2.0
+axes.xmargin: 0.05
+axes.ymargin: 0.05
+legend.frameon: False
+
+# Ticks
+xtick.color: black
+xtick.direction: in
+xtick.alignment: center
+xaxis.labellocation: center
+xtick.labeltop: False
+xtick.major.bottom: True
+xtick.major.pad: 2.0
+xtick.major.size: 3
+xtick.major.top: True
+xtick.major.width: 0.8
+xtick.minor.bottom: False
+xtick.minor.pad: 2.0
+xtick.minor.size: 1.5
+xtick.minor.top: False
+xtick.minor.visible: False
+xtick.minor.width: 0.25
+xtick.top: True
+ytick.alignment: center
+yaxis.labellocation: center
+ytick.color: black
+ytick.direction: in
+ytick.labelleft: True
+ytick.labelright: False
+ytick.left: True
+ytick.major.left: True
+ytick.major.pad: 2.0
+ytick.major.right: True
+ytick.major.size: 3
+ytick.major.width: 0.8
+ytick.minor.left: False
+ytick.minor.pad: 2.0
+ytick.minor.right: False
+ytick.minor.size: 1.5
+ytick.minor.visible: False
+ytick.minor.width: 0.25
+ytick.right: True
+
+# Lines and Markers (Nature: min line weight 0.25 pt)
+lines.linewidth: 1.5
+lines.markersize: 5
+lines.markeredgewidth: 0.8
+lines.markerfacecolor: white
+
+# Color cycle — accessible palette (Nature recommends colourblind-friendly)
+axes.prop_cycle: cycler('color', ['1F77B4', 'FF7F0E', '2CA02C', 'D62728', '9467BD', '8C564B', 'E377C2', '7F7F7F'])
+
+# LaTeX
+text.latex.preamble: \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath}
