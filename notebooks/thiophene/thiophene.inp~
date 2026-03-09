@@ -1,0 +1,16 @@
+! revPBE def2-SVP def2/J Hirshfeld CHELPG RIJONX D3 Energy KeepDens
+%chelpg
+DIPOLE TRUE
+end
+%plots
+Format Gaussian_Cube
+ElDens("eldens.cube");
+MO("homo.cube", 21, 0);
+MO("lumo.cube", 22, 0);
+end
+%maxcore 3000
+%elprop
+Polar 1
+Quadrupole True
+end
+* xyzfile 0 1 geometry.xtbopt.xyz
